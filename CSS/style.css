@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    height: 350px;
+    width: 700px;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-areas: " social sidebar login";
+    grid-template-columns: 50px 350px;
+    filter: drop-shadow(8px 8px 10px gray);
+    font-size: 20px;
+}
+
+.sidebar {
+    background: url(../Media/pict-item.jpg);
+    background-size: cover;
+    filter: invert(10%);
+    font-size: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar p {
+    color: rgb(71, 67, 67);
+    position: absolute;
+    bottom: 1rem;
+}
+
+.login {
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.social {
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: white;
+}
+
+.wrapper {
+    /* background-color: aquamarine; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title {
+    margin: 2.5rem 0;
+    color: white;
+}
+
+::placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nama {
+    height: 30px;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+#password {
+    height: 30px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+button {
+    background: transparent;
+    border: none;
+    background-color: white;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
